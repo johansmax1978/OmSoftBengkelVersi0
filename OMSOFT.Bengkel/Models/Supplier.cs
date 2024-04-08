@@ -1,0 +1,57 @@
+namespace OMSOFT.Models
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    
+
+    [Table("ab.Supplier")]
+    public partial class Supplier
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Supplier()
+        {
+            SupplierAlamat = new HashSet<SupplierAlamat>();
+            SupplierCabang = new HashSet<SupplierCabang>();
+            SupplierKontak = new HashSet<SupplierKontak>();
+            SupplierRekening = new HashSet<SupplierRekening>();
+        }
+
+        public bool StatusDelete { get; set; }
+
+        public bool StatusAktif { get; set; }
+
+        public Guid ID { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string Kode { get; set; }
+
+        [Required]
+        [StringLength(300)]
+        public string Nama { get; set; }
+
+        public Guid? IDPhoto { get; set; }
+
+        public DateTimeOffset? LastEdited { get; set; }
+
+        public virtual Photo Photo { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierAlamat> SupplierAlamat { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierCabang> SupplierCabang { get; set; }
+
+        public virtual SupplierCatatan SupplierCatatan { get; set; }
+
+        public virtual SupplierConfig SupplierConfig { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierKontak> SupplierKontak { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierRekening> SupplierRekening { get; set; }
+    }
+}
