@@ -1,0 +1,5 @@
+﻿================================ PENTING ================================ 
+
+Semua kelas di dalam namespace atau folder "Models" sudah tidak digunakan lagi.
+Kelas-kelas ini adalah bekas dari EntityFramework, yang dimana sekarang sudah 
+menggunakan REST-API.

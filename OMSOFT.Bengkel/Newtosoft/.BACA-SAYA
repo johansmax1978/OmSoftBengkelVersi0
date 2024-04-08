@@ -1,0 +1,38 @@
+﻿======================================== PENTING ========================================
+
+Semua kelas yang ada di dalam namespace Newtonsoft dalah untuk menambahkan beberapa fitur
+yang belum ada di library bawaannya. 
+
+.NET Framework 4.8.1 tidak mendukung System.Text.Json, oleh karena itu saya menggunakan
+Newtonsoft.Json sebagai library pengolah JSON.
+
+Fitur-fitur yang dirasa kurang, saya tambahkan disini. Berikut adalah deskripsi dari beberapa 
+kelas tambahan utama:
+
+1. Kelas "JsonExtensions"
+   Extensi methods untuk beragam macam keperluan pengolahan JSON.
+   Tambahkan metoda-metoda baru jika dibutuhkan.
+2. Interface "IJsonSerializable"
+   Impelementasikan interface ini di kelas-kelas model, untuk mendukung
+   Read dan Write JSON (vice-versa).
+3. Kelas "JsonDefault"
+   Kelas ini berisikan static properties dan methods untuk mengolah data JSON.
+   Semua instance "JsonSerializer" dari kelas ini sudah di format untuk 
+   mendukung serialisasi dan deserialisasi IJsonSerializable objects.
+
+   Jadi apabila kelas anda mengimplementasikan IJsonSerializable interface
+   baik secara explicit atau implicit, maka "JsonSerializer" dari
+   "JsonDefault.DefaultJsonPretty" atau "JsonDefault.DefaultJsonMinify"
+   mendukung 100% secara otomatis. Anda tinggal memanggil metoda 
+   JsonSerializer.Serialize atau JsonDeserializer.Deserialize<T> untuk 
+   serialisasi dan deserialisasi object anda.
+
+4. Semua member yang ada di dalam namespace ini menggunakan dokumentasi berbahasa
+   Inggris.
+
+5. Semua kode yang ada di dalam namespace ini diambil dari salah satu aplikasi yang
+   dikembangkan oleh Universitas Jendral Achmad Yani, yang dimana saya (Rizky) adalah
+   developernya. Hak cipta kode tidak diperlukan secara implisit, 
+   namun tidak boleh diskredit.
+
+- RIZKY -

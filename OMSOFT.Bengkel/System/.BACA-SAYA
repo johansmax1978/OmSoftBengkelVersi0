@@ -1,0 +1,13 @@
+﻿======================================== PENTING ========================================
+
+Semua kelas yang ada di dalam namespace System dalah untuk menambahkan beberapa fitur
+yang belum ada di library bawaannya. 
+
+1. Kelas "Epoch" digunakan untuk konversi data "linux EPOCH time" ke ".NET DateTime" (vice-versa).
+2. Kelas Random* adalah extensi dari "System.Random" yang menggunakan Cryptographic Random Generator.
+3. Kelas dalam namespace System.Collection.*Comparer adalah strongly-typed data type comparer.
+4. Kelas tambahan yang ada di dalam namespace "System.Runtime.CompilerServices" adalah untuk mendukung
+   penggunaan C# 9.0 di .NET Framework 4.8.1, tidak semua namun setidaknya "record", "init only", dsb 
+   dapat digunakan.
+
+- RIZKY -

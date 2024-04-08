@@ -1,0 +1,427 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F1C5288-AD7D-41E2-BA7C-A383705F7B6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OMSOFT.Bengkel</RootNamespace>
+    <AssemblyName>OMSOFT.Bengkel</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <HighEntropyVA>true</HighEntropyVA>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FLUENT;CLEAN;NETFX;WIN32;CLS;UNSAFE;JSON;CS11</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\OMSOFT.Bengkel.xml</DocumentationFile>
+    <NoWarn>1591;CS8500</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;FLUENT;CLEAN;NETFX;WIN32;CLS;UNSAFE;JSON;TRACKING;OPTIMIZED;CS11</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\OMSOFT.Bengkel.xml</DocumentationFile>
+    <NoWarn>1591;CS8500</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FLUENT;CLEAN;NETFX;WIN32;CLS;UNSAFE;JSON;X86;CS11</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\x86\Debug\OMSOFT.Bengkel.xml</DocumentationFile>
+    <NoWarn>1591;CS8500</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;FLUENT;CLEAN;NETFX;WIN32;CLS;UNSAFE;JSON;TRACKING;OPTIMIZED;X86;CS11</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\x86\Release\OMSOFT.Bengkel.xml</DocumentationFile>
+    <NoWarn>1591;CS8500</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FLUENT;CLEAN;NETFX;WIN32;CLS;UNSAFE;JSON;X64;CS11</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\x64\Debug\OMSOFT.Bengkel.xml</DocumentationFile>
+    <NoWarn>1591;CS8500</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;FLUENT;CLEAN;NETFX;WIN32;CLS;UNSAFE;JSON;TRACKING;OPTIMIZED;X64;CS11</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\x64\Release\OMSOFT.Bengkel.xml</DocumentationFile>
+    <NoWarn>1591;CS8500</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v21.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v21.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v21.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppBrowser.Designer.cs">
+      <DependentUpon>AppBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppLauncher.cs" />
+    <Compile Include="AppTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppTestForm.Designer.cs">
+      <DependentUpon>AppTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CabangController.cs" />
+    <Compile Include="Controllers\PerusahaanController.cs" />
+    <Compile Include="Custom\AlamatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\AlamatControl.Designer.cs">
+      <DependentUpon>AlamatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\HeaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\HeaderControl.Designer.cs">
+      <DependentUpon>HeaderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Agama.cs" />
+    <Compile Include="Models\Barang.cs" />
+    <Compile Include="Models\BarangCabang.cs" />
+    <Compile Include="Models\BarangCatatan.cs" />
+    <Compile Include="Models\BarangGroup.cs" />
+    <Compile Include="Models\BarangHarga.cs" />
+    <Compile Include="Models\BarangPhoto.cs" />
+    <Compile Include="Models\BarangRak.cs" />
+    <Compile Include="Models\BarangSatuan.cs" />
+    <Compile Include="Models\BarangSubGroup.cs" />
+    <Compile Include="Models\Cabang.cs" />
+    <Compile Include="Models\CabangAlamat.cs" />
+    <Compile Include="Models\CabangCatatan.cs" />
+    <Compile Include="Models\CabangKontak.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerAlamat.cs" />
+    <Compile Include="Models\CustomerCabang.cs" />
+    <Compile Include="Models\CustomerCatatan.cs" />
+    <Compile Include="Models\CustomerConfig.cs" />
+    <Compile Include="Models\CustomerGroup.cs" />
+    <Compile Include="Models\CustomerHarga.cs" />
+    <Compile Include="Models\CustomerKontak.cs" />
+    <Compile Include="Models\CustomerRekening.cs" />
+    <Compile Include="Models\Gudang.cs" />
+    <Compile Include="Models\GudangAlamat.cs" />
+    <Compile Include="Models\GudangCabang.cs" />
+    <Compile Include="Models\GudangCatatan.cs" />
+    <Compile Include="Models\GudangKontak.cs" />
+    <Compile Include="Models\Jabatan.cs" />
+    <Compile Include="Models\Karyawan.cs" />
+    <Compile Include="Models\KaryawanAlamat.cs" />
+    <Compile Include="Models\KaryawanCabang.cs" />
+    <Compile Include="Models\KaryawanCatatan.cs" />
+    <Compile Include="Models\KaryawanKomisi.cs" />
+    <Compile Include="Models\KaryawanKtp.cs" />
+    <Compile Include="Models\KaryawanRekening.cs" />
+    <Compile Include="Models\Logo.cs" />
+    <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\Penomoran.cs" />
+    <Compile Include="Models\Perusahaan.cs" />
+    <Compile Include="Models\PerusahaanAlamat.cs" />
+    <Compile Include="Models\PerusahaanConfig.cs" />
+    <Compile Include="Models\PerusahaanPajak.cs" />
+    <Compile Include="Models\Photo.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\SupplierAlamat.cs" />
+    <Compile Include="Models\SupplierCabang.cs" />
+    <Compile Include="Models\SupplierCatatan.cs" />
+    <Compile Include="Models\SupplierConfig.cs" />
+    <Compile Include="Models\SupplierKontak.cs" />
+    <Compile Include="Models\SupplierRekening.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserAccess.cs" />
+    <Compile Include="Models\UserGroup.cs" />
+    <Compile Include="Newtosoft\Json\Converters\ColorConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\CookieCollectionConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\CookieContainerConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\CookieConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\FontConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\ImageConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\JsonSerializableConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\SizeConverter.cs" />
+    <Compile Include="Newtosoft\Json\Converters\StringBuilderConverter.cs" />
+    <Compile Include="Newtosoft\Json\IJsonSerializable.cs" />
+    <Compile Include="Newtosoft\Json\JsonBase64Encoder.cs" />
+    <Compile Include="Newtosoft\Json\JsonBytesPool.cs" />
+    <Compile Include="Newtosoft\Json\JsonCharsPool.cs" />
+    <Compile Include="Newtosoft\Json\JsonDefault.cs" />
+    <Compile Include="Newtosoft\Json\JsonExtensions.cs" />
+    <Compile Include="Newtosoft\Json\JsonOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\ArrayStore.cs" />
+    <Compile Include="System\Collections\Int16Comparer.cs" />
+    <Compile Include="System\Collections\Int32Comparer.cs" />
+    <Compile Include="System\Collections\Int64Comparer.cs" />
+    <Compile Include="System\Collections\IntPtrComparer.cs" />
+    <Compile Include="System\Collections\ReferenceComparer.cs" />
+    <Compile Include="System\Collections\SByteComparer.cs" />
+    <Compile Include="System\Collections\TypeComparer.cs" />
+    <Compile Include="System\Collections\UInt16Comparer.cs" />
+    <Compile Include="System\Collections\UInt32Comparer.cs" />
+    <Compile Include="System\Collections\UInt64Comparer.cs" />
+    <Compile Include="System\Collections\UIntPtrComparer.cs" />
+    <Compile Include="System\Epoch.cs" />
+    <Compile Include="System\HashCode.cs" />
+    <Compile Include="System\IRandomSet.cs" />
+    <Compile Include="System\MixedChars.cs" />
+    <Compile Include="System\PersistentStorage.cs" />
+    <Compile Include="System\RandomAPI.cs" />
+    <Compile Include="System\RandomFilter.cs" />
+    <Compile Include="System\RandomMode.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IdentityFactory.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsExternalInit.cs" />
+    <Compile Include="System\Runtime\CompilerServices\ModuleInitializerAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\SkipLocalsInitAttribute.cs" />
+    <Compile Include="Views\INavigator.cs" />
+    <Compile Include="Views\Master\CabangMaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\CabangMaster.Designer.cs">
+      <DependentUpon>CabangMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\CabangMasterData.cs" />
+    <Compile Include="Views\Master\KontakMaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\KontakMaster.Designer.cs">
+      <DependentUpon>KontakMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\KontakMasterEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\KontakMasterEdit.Designer.cs">
+      <DependentUpon>KontakMasterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\KontakMasterData.cs" />
+    <Compile Include="Views\Master\KontakMasterEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\KontakMasterEditDialog.Designer.cs">
+      <DependentUpon>KontakMasterEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\CabangMasterEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\CabangMasterEdit.Designer.cs">
+      <DependentUpon>CabangMasterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\CabangMasterEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\CabangMasterEditDialog.Designer.cs">
+      <DependentUpon>CabangMasterEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\PerusahaanMasterEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\PerusahaanMasterEdit.Designer.cs">
+      <DependentUpon>PerusahaanMasterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\PerusahaanMasterEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\PerusahaanMasterEditDialog.Designer.cs">
+      <DependentUpon>PerusahaanMasterEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\PerusahaanMaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\PerusahaanMaster.Designer.cs">
+      <DependentUpon>PerusahaanMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigasi\NavigasiPengaturan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Navigasi\NavigasiPengaturan.Designer.cs">
+      <DependentUpon>NavigasiPengaturan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppBrowser.resx">
+      <DependentUpon>AppBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppTestForm.resx">
+      <DependentUpon>AppTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom\AlamatControl.resx">
+      <DependentUpon>AlamatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom\HeaderControl.resx">
+      <DependentUpon>HeaderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Master\CabangMaster.resx">
+      <DependentUpon>CabangMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\KontakMaster.resx">
+      <DependentUpon>KontakMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\KontakMasterEdit.resx">
+      <DependentUpon>KontakMasterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\KontakMasterEditDialog.resx">
+      <DependentUpon>KontakMasterEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\CabangMasterEdit.resx">
+      <DependentUpon>CabangMasterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\CabangMasterEditDialog.resx">
+      <DependentUpon>CabangMasterEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\PerusahaanMasterEdit.resx">
+      <DependentUpon>PerusahaanMasterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\PerusahaanMasterEditDialog.resx">
+      <DependentUpon>PerusahaanMasterEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\PerusahaanMaster.resx">
+      <DependentUpon>PerusahaanMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigasi\NavigasiPengaturan.resx">
+      <DependentUpon>NavigasiPengaturan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Controllers\.BACA-SAYA" />
+    <None Include="Custom\.BACA-SAYA" />
+    <None Include="Models\.BACA-SAYA" />
+    <None Include="Newtosoft\.BACA-SAYA" />
+    <None Include="Properties\DataSources\OMSOFT.Bengkel.Views.Master.CabangMasterData.datasource" />
+    <None Include="Properties\DataSources\OMSOFT.Bengkel.Views.Master.KontakMasterData.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="System\.BACA-SAYA" />
+    <None Include="Views\.BACA-SAYA" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

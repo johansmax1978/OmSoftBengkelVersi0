@@ -1,0 +1,9 @@
+﻿======================================== PENTING ========================================
+
+Semua yang ada di dalam folder Views adalah GUI dan Frames yang ditampilkan pada "AppBrowser".
+Sebagian juga merupaka kelas atau interface pendukung.
+
+Ini merupakan konsep awal aplikasi, yang dimana developer selanjutnya dapat merubah logic yang 
+ada, namun tidak meninggalkan point-point pentingnya.
+
+- RIZKY -

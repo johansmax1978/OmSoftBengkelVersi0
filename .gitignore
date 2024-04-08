@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/OMSOFT.Bengkel/FileContentIndex
+/.vs/OMSOFT.Bengkel/v17/.suo
+/OMSOFT.Bengkel/.vs
+*.bak
+/OMSOFT.Bengkel/obj

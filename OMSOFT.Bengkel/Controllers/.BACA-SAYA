@@ -1,0 +1,12 @@
+﻿======================================== PENTING ========================================
+
+Semua yang ada di dalam folder Controller adalah backend dari GUI di folder "Views".
+Sebagian juga merupakan kelas atau interface pendukung.
+
+Ini merupakan konsep awal aplikasi, yang dimana developer selanjutnya dapat merubah logic yang 
+ada, namun tidak meninggalkan point-point pentingnya.
+
+BaseController adalah abstraksi kelas-kelas controller (belum rampung 100%).
+Silahkan dirubah atau di modifikasi atau bahkan diganti jika diperlukan karena ini merupakan konsep lama.
+
+- RIZKY -
